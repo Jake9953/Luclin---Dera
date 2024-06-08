@@ -83,6 +83,12 @@ body {
 }
 
 @media (max-width: 600px) {
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 12px rgb(17, 0, 255);
+  }
   .links ul {
     display: none;
     flex-direction: column;
@@ -90,14 +96,17 @@ body {
     width: 100%;
   }
   .links li {
-    margin: 3px 0;
+    margin: 2px;
+    border: solid 8px rgb(255, 0, 64);
   }
   .menu-icon {
-    display: block;
+    display: flex;
     border: solid 12px rgb(0, 255, 0);
   }
   .links.show ul {
     display: flex;
+    border: solid 6px rgb(255, 0, 221);
+    align-items: flex-end;
   }
 }
 
