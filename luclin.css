@@ -1,0 +1,32 @@
+/* luclin.css */
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  position: absolute;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+  font-size: 1.5rem; /* Bootstrap equivalent to 24px */
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee {
+    font-size: 1.125rem; /* Bootstrap equivalent to 18px */
+  }
+}
