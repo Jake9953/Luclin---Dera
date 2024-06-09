@@ -1,0 +1,49 @@
+/* luclin.css */
+
+:root {
+  --primary-color: #0056b3;
+  --secondary-color: #ffd700;
+  --text-color: #343a40;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('path/to/your/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg-golden-yellow {
+  background-color: var(--secondary-color);
+}
+
+.logo-img {
+  width: 30px;
+}
+
+.smaller-img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+}
+
+.nav-link:hover {
+  color: #003f7d !important;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  flex: 1;
+}
+
